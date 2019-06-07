@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "GraphQL-AWS_Lambdas-Example-executor",
+    "name": "GraphQL-AWS_Lambdas-Example",
+    "region": "us-east-2"
+  },
+  "api": {
+    "id": "hjrl38edy2"
+  }
+}

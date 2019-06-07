@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template
+Resources:
+  Lambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda.handler
+      Runtime: node8.10
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
