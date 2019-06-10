@@ -5,7 +5,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: lambda.handler
-      Runtime: node8.10
+      Runtime: node8.6
       Events:
         Api:
           Type: Api
