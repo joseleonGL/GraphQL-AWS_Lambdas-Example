@@ -6,7 +6,7 @@ const {
     GraphQLString,
     GraphQLID,
     GraphQLBoolean,
-    GraphQ
+    GraphQLInt
 } = GraphQL;
 
 const ChildType = new GraphQLObjectType({
@@ -54,6 +54,9 @@ const ChildType = new GraphQLObjectType({
         },
         program: {
             type: GraphQLString
+        },
+        age: {
+            type: GraphQLInt
         }
     })
 });

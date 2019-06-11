@@ -3,8 +3,7 @@
 const GraphQL = require('graphql');
 const {
 	GraphQLList,
-	GraphQLString,
-	GraphQLNonNull,
+	GraphQLInt,
 } = GraphQL;
 
 // import the Post type we created
@@ -20,12 +19,12 @@ module.exports = {
 		return {
 			type: new GraphQLList(ChildType),
 			description: 'This will return all the childs found.',
-			/* args: {
-				subreddit: {
-					type: GraphQLString,
-					description: 'Please enter subreddit name',
+			args: {
+				ages: {
+					type: GraphQLList(GraphQLInt),
+					description: 'Please enter the children ages',
 				}
-			}, */
+			},
 			resolve(parent, args, context, info) {
 				return ChildResolver.index(args);
 			}
