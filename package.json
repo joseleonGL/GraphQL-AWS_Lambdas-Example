@@ -29,7 +29,7 @@
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "serverless": "^1.44.1",
+    "serverless": "^1.83.3",
     "serverless-offline": "^5.3.3"
   }
 }
